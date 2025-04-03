@@ -1,0 +1,95 @@
+/* Genel Sayfa Stili */
+body {
+    text-align: center;
+    background-color: #2D3D50; /* Koyu arka plan rengi */
+    color: #fff; /* Beyaz yazı rengi */
+    font-family: Arial, sans-serif; /* Arial yazı tipi */
+    margin: 0;
+    padding: 0;
+}
+
+/* Başlık Stili */
+h1 {
+    margin-top: 65px;
+    font-size: 4vw; /* Başlık boyutunu ekran genişliğine göre ayarlıyoruz */
+}
+
+/* Bateri Görseli */
+img {
+    height: 35vw; /* Görsel boyutunu ekran genişliğine göre esnek hale getiriyoruz */
+    max-height: 500px; /* Maksimum yükseklik sınırı */
+    width: auto; /* En boy oranını koruyoruz */
+}
+
+/* Drum Kit Konteyneri */
+.drum-kit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Butonlar arasındaki boşluk */
+    margin-top: 30px;
+    flex-wrap: wrap; /* Butonlar ekran boyutuna göre alt satıra geçebilir */
+}
+
+/* Drum Butonları */
+.drum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5vw; /* Buton genişliğini ekran genişliğine göre ayarlıyoruz */
+    height: 5vw; /* Buton yüksekliğini ekran genişliğine göre ayarlıyoruz */
+    min-width: 40px; /* Minumum genişlik */
+    min-height: 40px; /* Minimum yükseklik */
+    font-size: 2vw; /* Font boyutunu ekran genişliğine göre ayarlıyoruz */
+    font-weight: bold;
+    border: none;
+    border-radius: 10px; /* Butonların köşe yuvarlatması */
+    background: #3398DB; /* Mavi buton rengi */
+    color: white; /* Buton yazı rengi */
+    cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.1s; /* Animasyon geçiş süresi */
+}
+
+/* Butona Tıklanınca veya Aktif Olduğunda */
+.drum:active,
+.drum.active {
+    transform: scale(1.1); /* Hafif büyüme efekti */
+    box-shadow: 0 0 15px #ff0; /* Sarı gölge efekti */
+    background: #666; /* Butonun koyulaşması */
+}
+
+/* Responsive tasarım için medya sorguları */
+
+/* Tablet ekranlar ve daha küçük cihazlar için */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 8vw; /* Başlık boyutunu küçültüyoruz */
+    }
+    
+    img {
+        height: 40vw; /* Görselin boyutunu küçültüyoruz */
+    }
+
+    .drum {
+        width: 20vw; /* Butonları daha küçük yapıyoruz */
+        height: 20vw;
+        font-size: 4vw; /* Font boyutunu küçültüyoruz */
+    }
+}
+
+/* Telefon ekranları için */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 10vw; /* Başlık boyutunu daha da küçültüyoruz */
+    }
+
+    img {
+        height: 50vw; /* Görsel boyutunu daha da küçültüyoruz */
+    }
+
+    .drum {
+        width: 25vw; /* Butonları daha da küçültüyoruz */
+        height: 25vw;
+        font-size: 5vw; /* Font boyutunu küçültüyoruz */
+    }
+}
