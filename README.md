@@ -33,7 +33,7 @@ Bu proje, kullanıcıların klavye tuşlarına veya butonlara tıklayarak davul 
 ## Kurulum ve Çalıştırma
 1. **Projeyi İndir**
    ```sh
-   git clone https://github.com/kullanici/drum-kit.git
+   git clone https://git@github.com/BRTCLK/DrumKit.git
    ```
 2. **Dosyaları Aç**
    ```sh
@@ -55,3 +55,6 @@ Projeye katkıda bulunmak için:
 2. **Yeni bir branch** oluşturun
 3. **Değişiklik yapın ve commit atın**
 4. **Pull request gönderin**
+
+5. ## Canlı Link
+6. https://drumkick.netlify.app/
